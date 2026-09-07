@@ -437,8 +437,9 @@ class SettingsWindow:
                            activeforeground=c["text"]).pack(side="left")
             tk.Label(row, text=desc, font=("Segoe UI", 9), bg=c["bg"],
                      fg=c["text_dim"]).pack(side="left", padx=(8, 0))
-        tk.Label(body, text="No widget, arraste o canto ◢ para redimensionar",
-                 font=("Segoe UI", 9), bg=c["bg"], fg=c["text_dim"]).pack(anchor="w", pady=(4, 0))
+        tk.Label(body, text="Arraste pela barra do topo para mover; pelo canto ◢ para redimensionar.\nPosição e tamanho são memorizados automaticamente.",
+                 font=("Segoe UI", 9), bg=c["bg"], fg=c["text_dim"],
+                 justify="left").pack(anchor="w", pady=(4, 0))
         tk.Frame(body, bg=c["bg"]).pack(pady=6)
 
         # Sempre no Topo
@@ -450,6 +451,10 @@ class SettingsWindow:
                        activeforeground=c["text"]).pack(anchor="w")
         tk.Label(body, text="A janela fica acima de outras janelas (desativado por padrão)",
                  font=("Segoe UI", 9), bg=c["bg"], fg=c["text_dim"]).pack(anchor="w", padx=(22, 0))
+
+        tk.Button(body, text="Restaurar posição e tamanho padrão", font=("Segoe UI", 10),
+                  bg=c["key_bg"], fg=c["text"], relief="flat", padx=12, pady=4,
+                  command=self._reset_geometry).pack(anchor="w", pady=(12, 0))
 
     def _merged_colors(self):
         theme = self.theme_var.get()
@@ -497,6 +502,14 @@ class SettingsWindow:
         p._rebuild_ui_with_relayout()
         self.win.destroy()
 
+    def _reset_geometry(self):
+        p = self.parent
+        for k in ("widget_x", "widget_y", "widget_w", "widget_h",
+                  "win_x", "win_y", "win_w", "win_h"):
+            p.settings.pop(k, None)
+        save_settings(p.settings)
+        p._rebuild_ui_with_relayout()
+
 
 # ──────────────────── Main ────────────────────
 class ShortcutsWindow:
@@ -540,25 +553,38 @@ class ShortcutsWindow:
         self.root.attributes("-topmost", always_top)
 
         monitor = get_second_monitor()
+        pref = "widget_" if display == "widget" else "win_"
+        s = self.settings
+
         if display == "widget":
-            ww = max(300, int(self.settings.get("widget_w", 380)))
-            wh = max(240, int(self.settings.get("widget_h", 340)))
+            dw, dh = 380, 340
             if monitor:
-                x = monitor["left"] + monitor["width"] - ww - 20
-                y = monitor["top"] + monitor["height"] - wh - 20
+                dx = monitor["left"] + monitor["width"] - dw - 20
+                dy = monitor["top"] + monitor["height"] - dh - 20
             else:
                 sw = user32.GetSystemMetrics(0)
                 sh = user32.GetSystemMetrics(1)
-                x, y = sw - ww - 20, sh - wh - 60
-            self.root.geometry(f"{ww}x{wh}+{x}+{y}")
+                dx, dy = sw - dw - 20, sh - dh - 60
         else:
             if monitor:
-                x, y = monitor["left"], monitor["top"]
-                w, h = monitor["width"], monitor["height"]
+                dx, dy = monitor["left"], monitor["top"]
+                dw, dh = monitor["width"], monitor["height"]
             else:
-                w, h = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
-                x, y = 0, 0
-            self.root.geometry(f"{w}x{h}+{x}+{y}")
+                dw, dh = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+                dx, dy = 0, 0
+
+        ww = max(300, int(s.get(pref + "w", dw)))
+        wh = max(240, int(s.get(pref + "h", dh)))
+        x = int(s.get(pref + "x", dx))
+        y = int(s.get(pref + "y", dy))
+
+        if s.get(pref + "x") is not None:
+            rect = get_monitor_work_rect(x, y)
+            if rect:
+                x = max(rect.left, min(x, rect.right - ww))
+                y = max(rect.top, min(y, rect.bottom - wh))
+
+        self.root.geometry(f"{ww}x{wh}+{x}+{y}")
 
         self.root.update_idletasks()
         self.root.update()
@@ -591,11 +617,41 @@ class ShortcutsWindow:
         self.root.geometry(f"{w}x{h}+{self.root.winfo_x()}+{self.root.winfo_y()}")
 
     def _grip_end(self, _e=None):
-        self.settings["widget_w"] = self.root.winfo_width()
-        self.settings["widget_h"] = self.root.winfo_height()
-        save_settings(self.settings)
+        self._save_geometry()
         if self._current_app:
             self._update_shortcuts(self._current_app)
+
+    def _save_geometry(self):
+        pref = "widget_" if self.settings.get("display") == "widget" else "win_"
+        self.settings[pref + "x"] = self.root.winfo_x()
+        self.settings[pref + "y"] = self.root.winfo_y()
+        self.settings[pref + "w"] = self.root.winfo_width()
+        self.settings[pref + "h"] = self.root.winfo_height()
+        save_settings(self.settings)
+
+    def _drag_start(self, e):
+        self._dx = e.x_root - self.root.winfo_x()
+        self._dy = e.y_root - self.root.winfo_y()
+
+    def _drag_move(self, e):
+        if not hasattr(self, "_dx"):
+            return
+        self.root.geometry(f"+{e.x_root - self._dx}+{e.y_root - self._dy}")
+
+    def _drag_end(self, _e=None):
+        if hasattr(self, "_dx"):
+            del self._dx, self._dy
+        self._save_geometry()
+
+    def _bind_drag_tree(self, widget):
+        skip = (getattr(self, "menu_btn", None), getattr(self, "grip_btn", None))
+        if widget not in skip:
+            widget.bind("<ButtonPress-1>", self._drag_start)
+            widget.bind("<B1-Motion>", self._drag_move)
+            widget.bind("<ButtonRelease-1>", self._drag_end)
+        for child in widget.winfo_children():
+            if not isinstance(child, tk.Toplevel):
+                self._bind_drag_tree(child)
 
     def _apply_colors(self, colors):
         self.c = colors
@@ -656,13 +712,14 @@ class ShortcutsWindow:
         self.container = tk.Frame(self.root, bg=c["bg"])
         self.container.pack(fill="both", expand=True, padx=margin, pady=6)
 
-        if is_widget:
-            grip = tk.Label(self.root, text="◢", font=("Segoe UI", 9),
-                            bg=c["bg_header"], fg=c["text_dim"], cursor="size_nw_se")
-            grip.place(relx=1.0, rely=1.0, anchor="se")
-            grip.bind("<ButtonPress-1>", self._grip_start)
-            grip.bind("<B1-Motion>", self._grip_drag)
-            grip.bind("<ButtonRelease-1>", self._grip_end)
+        self.grip_btn = tk.Label(self.root, text="◢", font=("Segoe UI", 11, "bold"),
+                                 bg=c["bg_header"], fg=c["text_dim"], cursor="size_nw_se",
+                                 padx=5, pady=3)
+        self.grip_btn.place(relx=1.0, rely=1.0, anchor="se")
+        self.grip_btn.bind("<ButtonPress-1>", self._grip_start)
+        self.grip_btn.bind("<B1-Motion>", self._grip_drag)
+        self.grip_btn.bind("<ButtonRelease-1>", self._grip_end)
+        self._bind_drag_tree(self.root)
 
     def _show_menu(self, _event=None):
         c = self.c
@@ -699,7 +756,7 @@ class ShortcutsWindow:
         tk.Frame(about, bg=c["accent"], height=3).pack(fill="x")
         tk.Label(about, text="OPENFOCUSKEYS", font=("Consolas", 14, "bold"),
                  bg=c["bg"], fg=c["accent"]).pack(pady=(25, 5))
-        tk.Label(about, text="v1.1", font=("Consolas", 10),
+        tk.Label(about, text="v1.2", font=("Consolas", 10),
                  bg=c["bg"], fg=c["text_dim"]).pack()
         tk.Label(about, text="\nExibe atalhos de teclado na segunda tela\nconforme o programa em foco.\n\nPasse o mouse no (i) de cada atalho\npara ver a explicação detalhada.",
                  font=("Segoe UI", 10), bg=c["bg"], fg=c["text"],
@@ -825,6 +882,7 @@ class ShortcutsWindow:
         for c in range(cols):
             wrapper.columnconfigure(c, weight=1)
         self._bind_wheel(canvas, wrapper)
+        self._bind_drag_tree(self.root)
 
     def _poll_focus(self):
         try:
