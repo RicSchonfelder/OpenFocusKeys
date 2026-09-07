@@ -1,0 +1,3004 @@
+{
+  "_default": {
+    "name": "Geral",
+    "shortcuts": [
+      {
+        "key": "Ctrl+C",
+        "desc": "Copiar",
+        "info": "Copia o texto ou item selecionado para a área de transferência do Windows. Depois use Ctrl+V para colar onde quiser."
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar",
+        "info": "Cola o conteúdo da área de transferência na posição do cursor. Funciona em praticamente todos os programas."
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Recortar",
+        "info": "Recorta o item selecionado: ele é removido do original e guardado na área de transferência para colar com Ctrl+V."
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer",
+        "info": "Desfaz a última ação. Pressione várias vezes seguidas para voltar vários passos."
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer",
+        "info": "Refaz a ação que foi desfeita com Ctrl+Z, avançando de novo."
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar tudo",
+        "info": "Seleciona todo o conteúdo da tela ou campo atual de uma só vez."
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar",
+        "info": "Salva o arquivo atual. Se ainda não foi salvo antes, abre a janela 'Salvar como'."
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir",
+        "info": "Abre a janela de impressão do documento ou página atual."
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar",
+        "info": "Abre a busca dentro do programa para encontrar texto no conteúdo atual."
+      },
+      {
+        "key": "Alt+F4",
+        "desc": "Fechar janela",
+        "info": "Fecha a janela ativa. Se estiver no desktop, abre o menu de desligamento do Windows."
+      },
+      {
+        "key": "Alt+Tab",
+        "desc": "Trocar janela",
+        "info": "Segure Alt e pressione Tab para alternar entre as janelas abertas. Solte Alt na janela desejada."
+      },
+      {
+        "key": "Win+D",
+        "desc": "Mostrar desktop",
+        "info": "Minimiza todas as janelas de uma vez para mostrar a área de trabalho. Pressione de novo para restaurar tudo."
+      },
+      {
+        "key": "Win+L",
+        "desc": "Bloquear PC",
+        "info": "Bloqueia a tela do computador na hora. Use sempre que se afastar do PC."
+      },
+      {
+        "key": "Win+V",
+        "desc": "Histórico de clipboard",
+        "info": "Abre o histórico da área de transferência com os últimos itens copiados. Permite colar itens antigos."
+      },
+      {
+        "key": "Win+.",
+        "desc": "Emojis e símbolos",
+        "info": "Abre o painel de emojis, símbolos e caracteres especiais do Windows, para inserir no texto."
+      },
+      {
+        "key": "Win+I",
+        "desc": "Configurações",
+        "info": "Abre as Configurações do Windows diretamente."
+      },
+      {
+        "key": "Win+X",
+        "desc": "Menu avançado",
+        "info": "Abre o menu de links rápidos: Gerenciador de Tarefas, Terminal, Desligar, Gerenciar disco e outros."
+      },
+      {
+        "key": "Win+R",
+        "desc": "Executar",
+        "info": "Abre a caixa Executar para abrir programas digitando um comando, como cmd, notepad ou msconfig."
+      },
+      {
+        "key": "Win+Shift+S",
+        "desc": "Captura de tela",
+        "info": "Abre a ferramenta de recorte para capturar parte da tela. A imagem vai para a área de transferência para colar com Ctrl+V."
+      },
+      {
+        "key": "Win+E",
+        "desc": "Abrir Explorer",
+        "info": "Abre o Explorador de Arquivos do Windows."
+      }
+    ]
+  },
+  "chrome.exe": {
+    "name": "Google Chrome",
+    "shortcuts": [
+      {
+        "key": "Ctrl+T",
+        "desc": "Nova aba"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba atual"
+      },
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Reabrir última aba fechada"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba"
+      },
+      {
+        "key": "Ctrl+Shift+Tab",
+        "desc": "Aba anterior"
+      },
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova janela"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Janela anônima"
+      },
+      {
+        "key": "Ctrl+1 a Ctrl+8",
+        "desc": "Ir para aba específica"
+      },
+      {
+        "key": "Ctrl+9",
+        "desc": "Ir para última aba"
+      },
+      {
+        "key": "Ctrl+Shift+W",
+        "desc": "Fechar janela"
+      },
+      {
+        "key": "Alt+Left",
+        "desc": "Voltar uma página"
+      },
+      {
+        "key": "Alt+Right",
+        "desc": "Avançar uma página"
+      },
+      {
+        "key": "F5",
+        "desc": "Recarregar página"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Recarregar página"
+      },
+      {
+        "key": "Ctrl+Shift+R",
+        "desc": "Hard reload (sem cache)"
+      },
+      {
+        "key": "Esc",
+        "desc": "Parar carregamento"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Focar barra de endereço"
+      },
+      {
+        "key": "F6",
+        "desc": "Focar barra de endereço"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Completar com .com"
+      },
+      {
+        "key": "Ctrl++",
+        "desc": "Aumentar zoom"
+      },
+      {
+        "key": "Ctrl+-",
+        "desc": "Diminuir zoom"
+      },
+      {
+        "key": "Ctrl+0",
+        "desc": "Zoom padrão"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar na página"
+      },
+      {
+        "key": "F3",
+        "desc": "Próximo resultado busca"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Histórico"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Downloads"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Favoritos"
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Salvar todas como favoritos"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Código fonte da página"
+      },
+      {
+        "key": "Ctrl+Shift+Delete",
+        "desc": "Limpar dados de navegação"
+      },
+      {
+        "key": "Shift+Esc",
+        "desc": "Gerenciador de tarefas"
+      },
+      {
+        "key": "F12",
+        "desc": "Abrir DevTools"
+      },
+      {
+        "key": "Ctrl+Shift+I",
+        "desc": "Abrir DevTools"
+      },
+      {
+        "key": "Ctrl+Shift+J",
+        "desc": "Console do DevTools"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Inspecionar elemento"
+      },
+      {
+        "key": "Ctrl+Shift+M",
+        "desc": "Modo responsivo"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir página"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar página"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar sem formatação"
+      },
+      {
+        "key": "F7",
+        "desc": "Navegação por cursor"
+      }
+    ]
+  },
+  "msedge.exe": {
+    "name": "Microsoft Edge",
+    "shortcuts": [
+      {
+        "key": "Ctrl+T",
+        "desc": "Nova aba"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba"
+      },
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Reabrir aba fechada"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba"
+      },
+      {
+        "key": "Ctrl+Shift+Tab",
+        "desc": "Aba anterior"
+      },
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova janela"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Janela anônima"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Barra de endereço"
+      },
+      {
+        "key": "F5",
+        "desc": "Recarregar"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar na página"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Favoritos"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Histórico"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Downloads"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "F12",
+        "desc": "DevTools"
+      },
+      {
+        "key": "Ctrl+Shift+Delete",
+        "desc": "Limpar dados"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Recarregar"
+      }
+    ]
+  },
+  "firefox.exe": {
+    "name": "Mozilla Firefox",
+    "shortcuts": [
+      {
+        "key": "Ctrl+T",
+        "desc": "Nova aba"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba"
+      },
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Reabrir aba fechada"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba"
+      },
+      {
+        "key": "Ctrl+Shift+Tab",
+        "desc": "Aba anterior"
+      },
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova janela"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Janela anônima"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Barra de endereço"
+      },
+      {
+        "key": "F5",
+        "desc": "Recarregar"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar na página"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Favoritos"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Histórico"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Downloads"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "F12",
+        "desc": "Developer Tools"
+      },
+      {
+        "key": "Ctrl+Shift+Delete",
+        "desc": "Limpar dados"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+Shift+R",
+        "desc": "Hard reload"
+      }
+    ]
+  },
+  "code.exe": {
+    "name": "VS Code",
+    "shortcuts": [
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Command Palette"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Quick Open (arquivo)"
+      },
+      {
+        "key": "Ctrl+`",
+        "desc": "Abrir/ocultar terminal"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Mostrar/ocultar sidebar"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Mostrar/ocultar painel inferior"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Nova janela/instância"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba do editor"
+      },
+      {
+        "key": "Ctrl+Shift+W",
+        "desc": "Fechar janela"
+      },
+      {
+        "key": "Ctrl+,",
+        "desc": "Abrir Configurações"
+      },
+      {
+        "key": "Ctrl+K Ctrl+S",
+        "desc": "Atalhos de Teclado"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Recortar linha"
+      },
+      {
+        "key": "Ctrl+C",
+        "desc": "Copiar linha"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Ctrl+Shift+K",
+        "desc": "Excluir linha"
+      },
+      {
+        "key": "Ctrl+Shift+Up",
+        "desc": "Mover linha para cima"
+      },
+      {
+        "key": "Ctrl+Shift+Down",
+        "desc": "Mover linha para baixo"
+      },
+      {
+        "key": "Shift+Alt+Down",
+        "desc": "Copiar linha para baixo"
+      },
+      {
+        "key": "Shift+Alt+Up",
+        "desc": "Copiar linha para cima"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Inserir linha abaixo"
+      },
+      {
+        "key": "Ctrl+Shift+Enter",
+        "desc": "Inserir linha acima"
+      },
+      {
+        "key": "Ctrl+/",
+        "desc": "Comentário de linha"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Selecionar linha atual"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Desfazer seleção do cursor"
+      },
+      {
+        "key": "Ctrl+Backspace",
+        "desc": "Excluir palavra anterior"
+      },
+      {
+        "key": "Ctrl+Delete",
+        "desc": "Excluir próxima palavra"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Selecionar próxima ocorrência"
+      },
+      {
+        "key": "Ctrl+Shift+L",
+        "desc": "Selecionar todas ocorrências"
+      },
+      {
+        "key": "Ctrl+Alt+Up",
+        "desc": "Adicionar cursor acima"
+      },
+      {
+        "key": "Ctrl+Alt+Down",
+        "desc": "Adicionar cursor abaixo"
+      },
+      {
+        "key": "F12",
+        "desc": "Ir para definição"
+      },
+      {
+        "key": "Ctrl+Shift+O",
+        "desc": "Ir para símbolo"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Ir para linha"
+      },
+      {
+        "key": "Ctrl+Shift+\\",
+        "desc": "Ir para par correspondente"
+      },
+      {
+        "key": "Alt+Left",
+        "desc": "Voltar"
+      },
+      {
+        "key": "Alt+Right",
+        "desc": "Avançar"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba"
+      },
+      {
+        "key": "Ctrl+Shift+Tab",
+        "desc": "Aba anterior"
+      },
+      {
+        "key": "Ctrl+Home",
+        "desc": "Início do arquivo"
+      },
+      {
+        "key": "Ctrl+End",
+        "desc": "Fim do arquivo"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar no arquivo"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Buscar e substituir"
+      },
+      {
+        "key": "Ctrl+Shift+F",
+        "desc": "Buscar em todos arquivos"
+      },
+      {
+        "key": "F3",
+        "desc": "Próximo resultado"
+      },
+      {
+        "key": "Ctrl+Shift+`",
+        "desc": "Novo terminal"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Copiar no terminal"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar no terminal"
+      },
+      {
+        "key": "Ctrl+K",
+        "desc": "Limpar terminal"
+      },
+      {
+        "key": "Ctrl+Shift+G",
+        "desc": "Painel Git"
+      },
+      {
+        "key": "F5",
+        "desc": "Iniciar debug"
+      },
+      {
+        "key": "Shift+F5",
+        "desc": "Parar debug"
+      },
+      {
+        "key": "F9",
+        "desc": "Toggle breakpoint"
+      },
+      {
+        "key": "F10",
+        "desc": "Step over"
+      },
+      {
+        "key": "F11",
+        "desc": "Step into"
+      },
+      {
+        "key": "Shift+F11",
+        "desc": "Step out"
+      },
+      {
+        "key": "Shift+Alt+F",
+        "desc": "Formatar documento"
+      },
+      {
+        "key": "Ctrl+Space",
+        "desc": "IntelliSense"
+      },
+      {
+        "key": "Tab",
+        "desc": "Expandir Emmet"
+      },
+      {
+        "key": "Ctrl+\\",
+        "desc": "Split editor"
+      },
+      {
+        "key": "Ctrl+1/2/3",
+        "desc": "Ir para editor N"
+      }
+    ]
+  },
+  "devenv.exe": {
+    "name": "Visual Studio",
+    "shortcuts": [
+      {
+        "key": "Ctrl+Shift+B",
+        "desc": "Build solution"
+      },
+      {
+        "key": "F5",
+        "desc": "Debug"
+      },
+      {
+        "key": "Ctrl+F5",
+        "desc": "Run sem debug"
+      },
+      {
+        "key": "Ctrl+K C",
+        "desc": "Comentar seleção"
+      },
+      {
+        "key": "Ctrl+K U",
+        "desc": "Descomentar seleção"
+      },
+      {
+        "key": "F12",
+        "desc": "Go to Definition"
+      },
+      {
+        "key": "Ctrl+.",
+        "desc": "Quick Actions"
+      },
+      {
+        "key": "Ctrl+R R",
+        "desc": "Rename symbol"
+      },
+      {
+        "key": "Ctrl+K D",
+        "desc": "Format document"
+      },
+      {
+        "key": "Ctrl+M O",
+        "desc": "Toggle outlining"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Insert blank line above"
+      },
+      {
+        "key": "Ctrl+Shift+Enter",
+        "desc": "Insert blank line below"
+      },
+      {
+        "key": "Ctrl+K F",
+        "desc": "Format selection"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Delete line"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Cut line (no selection)"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Paste cycling"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Switch documents"
+      },
+      {
+        "key": "Ctrl+PgUp/PgDn",
+        "desc": "Switch tabs"
+      },
+      {
+        "key": "F11",
+        "desc": "Step into"
+      },
+      {
+        "key": "F10",
+        "desc": "Step over"
+      },
+      {
+        "key": "Shift+F11",
+        "desc": "Step out"
+      },
+      {
+        "key": "F9",
+        "desc": "Toggle breakpoint"
+      },
+      {
+        "key": "Ctrl+K L",
+        "desc": "Enable breakpoint"
+      },
+      {
+        "key": "Ctrl+K N",
+        "desc": "New function breakpoint"
+      }
+    ]
+  },
+  "explorer.exe": {
+    "name": "Windows Explorer",
+    "shortcuts": [
+      {
+        "key": "Win+E",
+        "desc": "Abrir Explorer"
+      },
+      {
+        "key": "Alt+Left",
+        "desc": "Voltar"
+      },
+      {
+        "key": "Alt+Right",
+        "desc": "Avançar"
+      },
+      {
+        "key": "Alt+Up",
+        "desc": "Subir um nível"
+      },
+      {
+        "key": "Alt+D",
+        "desc": "Focar barra de endereço"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Focar barra de endereço"
+      },
+      {
+        "key": "F4",
+        "desc": "Abrir histórico endereço"
+      },
+      {
+        "key": "F5",
+        "desc": "Atualizar"
+      },
+      {
+        "key": "Backspace",
+        "desc": "Voltar ao diretório pai"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Focar campo de busca"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Focar campo de busca"
+      },
+      {
+        "key": "Tab",
+        "desc": "Próxima área de foco"
+      },
+      {
+        "key": "Shift+Tab",
+        "desc": "Área de foco anterior"
+      },
+      {
+        "key": "F11",
+        "desc": "Alternar tela cheia"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar tudo"
+      },
+      {
+        "key": "Shift+Arrow",
+        "desc": "Selecionar estendendo"
+      },
+      {
+        "key": "Ctrl+Click",
+        "desc": "Selecionar não adjacentes"
+      },
+      {
+        "key": "Shift+Click",
+        "desc": "Selecionar intervalo"
+      },
+      {
+        "key": "Space",
+        "desc": "Marcar/desmarcar item"
+      },
+      {
+        "key": "Num *",
+        "desc": "Selecionar todos na pasta pai"
+      },
+      {
+        "key": "Ctrl+C",
+        "desc": "Copiar"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Recortar"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "F2",
+        "desc": "Renomear"
+      },
+      {
+        "key": "Delete",
+        "desc": "Excluir para lixeira"
+      },
+      {
+        "key": "Shift+Delete",
+        "desc": "Excluir permanentemente"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Nova pasta"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Mover para lixeira"
+      },
+      {
+        "key": "Alt+P",
+        "desc": "Mostrar/ocultar preview"
+      },
+      {
+        "key": "Ctrl+Shift+E",
+        "desc": "Mostrar árvore de pastas"
+      },
+      {
+        "key": "Ctrl+Shift+1",
+        "desc": "Visualização grande"
+      },
+      {
+        "key": "Ctrl+Shift+2",
+        "desc": "Visualização de ícones"
+      },
+      {
+        "key": "Ctrl+Shift+3",
+        "desc": "Visualização de lista"
+      },
+      {
+        "key": "Ctrl+Shift+4",
+        "desc": "Detalhes"
+      },
+      {
+        "key": "Alt+Enter",
+        "desc": "Propriedades"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Nova aba (Win11)"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba (Win11)"
+      },
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Reabrir aba (Win11)"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba (Win11)"
+      }
+    ]
+  },
+  "notepad.exe": {
+    "name": "Bloco de Notas",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Novo arquivo"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir arquivo"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "Ctrl+Shift+S",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Substituir"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Ir para linha"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar tudo"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Localizar"
+      },
+      {
+        "key": "F5",
+        "desc": "Inserir data/hora"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Recortar"
+      },
+      {
+        "key": "Ctrl+C",
+        "desc": "Copiar"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Tab",
+        "desc": "Inserir tab"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Inserir tab (novo)"
+      },
+      {
+        "key": "F3",
+        "desc": "Próximo resultado busca"
+      },
+      {
+        "key": "Ctrl+M",
+        "desc": "Ir para parágrafo"
+      },
+      {
+        "key": "Ctrl+Shift+U",
+        "desc": "Maiúsculas"
+      }
+    ]
+  },
+  "notepad++.exe": {
+    "name": "Notepad++",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Novo arquivo"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir arquivo"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "Ctrl+Alt+S",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+Shift+S",
+        "desc": "Salvar todos"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar arquivo"
+      },
+      {
+        "key": "Ctrl+Shift+W",
+        "desc": "Fechar todos"
+      },
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Reabrir arquivo fechado"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Duplicar linha"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Juntar linhas"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Quebrar linhas"
+      },
+      {
+        "key": "Ctrl+Shift+Up",
+        "desc": "Mover linha para cima"
+      },
+      {
+        "key": "Ctrl+Shift+Down",
+        "desc": "Mover linha para baixo"
+      },
+      {
+        "key": "Ctrl+Shift+U",
+        "desc": "Maiúsculas"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Minúsculas"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Encontrar"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Substituir"
+      },
+      {
+        "key": "Ctrl+Shift+F",
+        "desc": "Encontrar em arquivos"
+      },
+      {
+        "key": "F3",
+        "desc": "Próximo resultado"
+      },
+      {
+        "key": "Shift+F3",
+        "desc": "Resultado anterior"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Ir para linha"
+      },
+      {
+        "key": "Ctrl+Space",
+        "desc": "Auto-completar"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Auto-completar palavra"
+      },
+      {
+        "key": "Ctrl+Shift+R",
+        "desc": "Gravar macro"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Reproduzir macro"
+      },
+      {
+        "key": "Alt+C",
+        "desc": "Modo coluna"
+      },
+      {
+        "key": "Alt+Shift+Arrow",
+        "desc": "Seleção retangular"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "F12",
+        "desc": "Modo Post-It"
+      },
+      {
+        "key": "Ctrl+Q",
+        "desc": "Comentário toggle"
+      },
+      {
+        "key": "Ctrl+K",
+        "desc": "Comentário de linha"
+      },
+      {
+        "key": "Alt+0",
+        "desc": "Dobrar tudo"
+      },
+      {
+        "key": "Alt+Shift+0",
+        "desc": "Desdobrar tudo"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Ir para chave correspondente"
+      },
+      {
+        "key": "Tab",
+        "desc": "Indentar"
+      },
+      {
+        "key": "Shift+Tab",
+        "desc": "Desindentar"
+      }
+    ]
+  },
+  "windowsterminal.exe": {
+    "name": "Windows Terminal",
+    "shortcuts": [
+      {
+        "key": "Ctrl+Shift+T",
+        "desc": "Nova aba"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar aba"
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Nova aba padrão"
+      },
+      {
+        "key": "Ctrl+Shift+W",
+        "desc": "Fechar aba atual"
+      },
+      {
+        "key": "Ctrl+Tab",
+        "desc": "Próxima aba"
+      },
+      {
+        "key": "Ctrl+Shift+Tab",
+        "desc": "Aba anterior"
+      },
+      {
+        "key": "Ctrl+1 a Ctrl+9",
+        "desc": "Ir para aba N"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Nova janela"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Command Palette"
+      },
+      {
+        "key": "Alt+Shift+-",
+        "desc": "Split horizontal"
+      },
+      {
+        "key": "Alt+Shift++",
+        "desc": "Split vertical"
+      },
+      {
+        "key": "Alt+Shift+D",
+        "desc": "Split com perfil padrão"
+      },
+      {
+        "key": "Ctrl+Shift+Arrow",
+        "desc": "Focar painel adjacente"
+      },
+      {
+        "key": "Ctrl+Shift+X",
+        "desc": "Fechar painel"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Copiar selecionado"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Ctrl+Shift+F",
+        "desc": "Buscar no terminal"
+      },
+      {
+        "key": "Ctrl+Shift+M",
+        "desc": "Mark mode"
+      },
+      {
+        "key": "Ctrl+Up",
+        "desc": "Rolar para cima"
+      },
+      {
+        "key": "Ctrl+Down",
+        "desc": "Rolar para baixo"
+      },
+      {
+        "key": "Ctrl+Shift+Home",
+        "desc": "Ir para o topo"
+      },
+      {
+        "key": "Ctrl+Shift+End",
+        "desc": "Ir para o fim"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Command Palette"
+      },
+      {
+        "key": "Ctrl+,",
+        "desc": "Abrir Configurações"
+      },
+      {
+        "key": "Ctrl+Shift+,",
+        "desc": "Abrir settings.json"
+      },
+      {
+        "key": "Ctrl++",
+        "desc": "Aumentar fonte"
+      },
+      {
+        "key": "Ctrl+-",
+        "desc": "Diminuir fonte"
+      },
+      {
+        "key": "Ctrl+0",
+        "desc": "Resetar tamanho fonte"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "Win+`",
+        "desc": "Modo Quake (dropdown)"
+      }
+    ]
+  },
+  "cmd.exe": {
+    "name": "Prompt de Comando",
+    "shortcuts": [
+      {
+        "key": "Ctrl+C",
+        "desc": "Interromper processo"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Ctrl+M",
+        "desc": "Entrar modo marcador"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar no prompt"
+      },
+      {
+        "key": "F7",
+        "desc": "Histórico de comandos"
+      },
+      {
+        "key": "Tab",
+        "desc": "Auto-completar"
+      },
+      {
+        "key": "↑/↓",
+        "desc": "Comandos anteriores"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "Alt+Enter",
+        "desc": "Tela cheia alternativa"
+      },
+      {
+        "key": "Ctrl+Esc",
+        "desc": "Gerenciador de tarefas"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "End-of-file"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Colar (alternativo)"
+      },
+      {
+        "key": "Home",
+        "desc": "Início da linha"
+      },
+      {
+        "key": "End",
+        "desc": "Fim da linha"
+      },
+      {
+        "key": "Page Up",
+        "desc": "Rolar tela acima"
+      },
+      {
+        "key": "Page Down",
+        "desc": "Rolar tela abaixo"
+      }
+    ]
+  },
+  "powershell.exe": {
+    "name": "PowerShell",
+    "shortcuts": [
+      {
+        "key": "Ctrl+C",
+        "desc": "Interromper processo"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Tab",
+        "desc": "Auto-completar"
+      },
+      {
+        "key": "F7",
+        "desc": "Histórico de comandos"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Busca reversa no histórico"
+      },
+      {
+        "key": "↑/↓",
+        "desc": "Comandos anteriores"
+      },
+      {
+        "key": "→",
+        "desc": "Auto-completar (preview)"
+      },
+      {
+        "key": "F11",
+        "desc": "Tela cheia"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "End-of-file"
+      },
+      {
+        "key": "Home",
+        "desc": "Início da linha"
+      },
+      {
+        "key": "End",
+        "desc": "Fim da linha"
+      },
+      {
+        "key": "Ctrl+Home",
+        "desc": "Início do buffer"
+      },
+      {
+        "key": "Ctrl+End",
+        "desc": "Fim do buffer"
+      },
+      {
+        "key": "Page Up",
+        "desc": "Rolar tela acima"
+      },
+      {
+        "key": "Page Down",
+        "desc": "Rolar tela abaixo"
+      },
+      {
+        "key": "F3",
+        "desc": "Colar último comando"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Copiar selecionado"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar"
+      }
+    ]
+  },
+  "opencode.exe": {
+    "name": "OpenCode",
+    "shortcuts": [
+      {
+        "key": "Enter",
+        "desc": "Enviar mensagem",
+        "info": "Envia o prompt para o agente. Use Shift+Enter ou Ctrl+J para quebra de linha."
+      },
+      {
+        "key": "Shift+Enter",
+        "desc": "Nova linha",
+        "info": "Quebra de linha sem enviar. No Windows Terminal exige ação custom sendInput (ver docs de keybinds)."
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Nova linha (alt.)",
+        "info": "Quebra de linha sem enviar — funciona sem configurar nada no terminal."
+      },
+      {
+        "key": "Esc",
+        "desc": "Interromper/fechar",
+        "info": "Interrompe a geração em andamento, fecha autocomplete/popovers ou cancela o diálogo."
+      },
+      {
+        "key": "/",
+        "desc": "Menu de comandos",
+        "info": "Digite / no início do prompt para abrir os comandos (/new, /compact, /models...). Continue digitando para filtrar."
+      },
+      {
+        "key": "@",
+        "desc": "Mencionar arquivo",
+        "info": "Digite @ seguido do nome de um arquivo do projeto para anexá-lo ao prompt como contexto."
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Paleta de comandos",
+        "info": "Abre a lista de comandos do opencode em qualquer momento."
+      },
+      {
+        "key": "Tab",
+        "desc": "Autocompletar/agente",
+        "info": "Com autocomplete aberto: completa a sugestão. Fechado: alterna o agente (build/plan)."
+      },
+      {
+        "key": "↑",
+        "desc": "Histórico/acima",
+        "info": "No prompt: comando anterior do histórico. Em listas: item acima. Na árvore: sessão pai."
+      },
+      {
+        "key": "↓",
+        "desc": "Histórico/abaixo",
+        "info": "No prompt: próximo comando do histórico. Em listas: item abaixo."
+      },
+      {
+        "key": "Ctrl+C",
+        "desc": "Limpar/sair",
+        "info": "Com texto no prompt: limpa o input. Vazio: interrompe; repetido: encerra o opencode."
+      },
+      {
+        "key": "Ctrl+X → E",
+        "desc": "Editor externo",
+        "info": "Abre o prompt no seu editor externo ($EDITOR) para mensagens longas; volta ao salvar."
+      },
+      {
+        "key": "Ctrl+X → N",
+        "desc": "Nova sessão",
+        "info": "Cria uma sessão limpa, com contexto novo."
+      },
+      {
+        "key": "Ctrl+X → L",
+        "desc": "Listar sessões",
+        "info": "Abre a lista de sessões anteriores para retomar uma conversa."
+      },
+      {
+        "key": "Ctrl+X → G",
+        "desc": "Linha do tempo",
+        "info": "Mostra a timeline da sessão atual (ramificações e subagentes)."
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Renomear sessão",
+        "info": "Renomeia a sessão atual para encontrá-la depois na lista."
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Deletar/EOF (ctx)",
+        "info": "Na lista de sessões: deleta a sessão. Fora do editor: encerra (EOF). No editor: apaga o caractere sob o cursor."
+      },
+      {
+        "key": "Ctrl+X → C",
+        "desc": "Compactar sessão",
+        "info": "Sumariza o histórico em um resumo para liberar contexto (equivale a /compact)."
+      },
+      {
+        "key": "Ctrl+X → X",
+        "desc": "Exportar sessão",
+        "info": "Exporta a conversa atual para arquivo (markdown/transcrição)."
+      },
+      {
+        "key": "Ctrl+X → S",
+        "desc": "Painel de status",
+        "info": "Abre o painel com status da sessão, modelo e uso."
+      },
+      {
+        "key": "Ctrl+X → B",
+        "desc": "Barra lateral",
+        "info": "Mostra/oculta a barra lateral com a árvore de sessões."
+      },
+      {
+        "key": "Ctrl+X → Q",
+        "desc": "Sair",
+        "info": "Encerra o opencode (equivale a Ctrl+C duas vezes)."
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Provedores e modelos",
+        "info": "Abre a lista de provedores e modelos disponíveis. Dentro do editor: início da linha."
+      },
+      {
+        "key": "Ctrl+X → M",
+        "desc": "Selecionar modelo",
+        "info": "Abre o seletor de modelos para a sessão atual."
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Favoritar modelo",
+        "info": "Marca/desmarca o modelo atual como favorito (use com F2). No prompt de permissão: tela cheia."
+      },
+      {
+        "key": "F2",
+        "desc": "Modelos recentes",
+        "info": "Alterna entre os últimos modelos usados."
+      },
+      {
+        "key": "Shift+F2",
+        "desc": "Recentes (reverso)",
+        "info": "Alterna entre os modelos recentes na ordem inversa."
+      },
+      {
+        "key": "Ctrl+X → A",
+        "desc": "Selecionar agente",
+        "info": "Abre a lista de agentes (build, plan, personalizados...)."
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Alternar variante",
+        "info": "Alterna a variante do modelo atual (versões diferentes do mesmo modelo)."
+      },
+      {
+        "key": "Page Up",
+        "desc": "Página acima",
+        "info": "Rola as mensagens uma página para cima (também Ctrl+Alt+B)."
+      },
+      {
+        "key": "Page Down",
+        "desc": "Página abaixo",
+        "info": "Rola as mensagens uma página para baixo (também Ctrl+Alt+F)."
+      },
+      {
+        "key": "Ctrl+Alt+U",
+        "desc": "Meia pág. acima",
+        "info": "Rola as mensagens meia página para cima."
+      },
+      {
+        "key": "Ctrl+Alt+D",
+        "desc": "Meia pág. abaixo",
+        "info": "Rola as mensagens meia página para baixo."
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Início da conversa",
+        "info": "Pula para a primeira mensagem (também Home)."
+      },
+      {
+        "key": "Ctrl+Alt+G",
+        "desc": "Fim da conversa",
+        "info": "Pula para a última mensagem (também End)."
+      },
+      {
+        "key": "Ctrl+X → Y",
+        "desc": "Copiar resposta",
+        "info": "Copia a última resposta do assistente para a área de transferência."
+      },
+      {
+        "key": "Ctrl+X → U",
+        "desc": "Desfazer mensagem",
+        "info": "Remove a última mensagem enviada, voltando o estado da conversa."
+      },
+      {
+        "key": "Ctrl+X → R",
+        "desc": "Refazer mensagem",
+        "info": "Restaura a mensagem que foi desfeita com Ctrl+X → U."
+      },
+      {
+        "key": "Ctrl+X → H",
+        "desc": "Ocultar detalhes",
+        "info": "Oculta/mostra detalhes de ferramentas e thinking na conversa."
+      },
+      {
+        "key": "→",
+        "desc": "Sessão filha",
+        "info": "Navega para a próxima sessão filha (subagentes) da atual."
+      },
+      {
+        "key": "←",
+        "desc": "Filha anterior",
+        "info": "Navega para a sessão filha anterior."
+      },
+      {
+        "key": "Ctrl+X → ↓",
+        "desc": "Ir para subagente",
+        "info": "Desce para a primeira sessão filha (subagente) da sessão atual."
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Fim da linha",
+        "info": "No editor do prompt: move o cursor para o fim da linha."
+      },
+      {
+        "key": "Ctrl+K",
+        "desc": "Apagar até o fim",
+        "info": "No editor: apaga do cursor até o fim da linha."
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Apagar até o início",
+        "info": "No editor: apaga do cursor até o início da linha."
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Apagar linha",
+        "info": "No editor: apaga a linha atual inteira."
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Apagar palavra",
+        "info": "Apaga a palavra antes do cursor (também Ctrl+Backspace)."
+      },
+      {
+        "key": "Alt+D",
+        "desc": "Apagar próx. palavra",
+        "info": "Apaga a palavra depois do cursor (também Ctrl+Delete)."
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer edição",
+        "info": "Desfaz a última edição no editor do prompt. No Windows é undo; no Linux suspende o terminal."
+      },
+      {
+        "key": "Ctrl+.",
+        "desc": "Refazer edição",
+        "info": "Refaz a edição desfeita no editor do prompt."
+      },
+      {
+        "key": "Alt+B",
+        "desc": "Palavra atrás",
+        "info": "Move o cursor uma palavra para trás (também Ctrl+←)."
+      },
+      {
+        "key": "Alt+F",
+        "desc": "Palavra à frente",
+        "info": "Move o cursor uma palavra à frente (também Ctrl+→)."
+      },
+      {
+        "key": "Ctrl+Alt+K",
+        "desc": "Mapa de teclas",
+        "info": "Abre o which-key: overlay com todos os atalhos disponíveis, agrupados por função."
+      },
+      {
+        "key": "Ctrl+Alt+Shift+K",
+        "desc": "Layout do mapa",
+        "info": "Alterna o layout de exibição do which-key (mapa de teclas)."
+      }
+    ]
+  },
+  "slack.exe": {
+    "name": "Slack",
+    "shortcuts": [
+      {
+        "key": "Ctrl+K",
+        "desc": "Quick Switcher"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Quick Switcher (alt)"
+      },
+      {
+        "key": "F6",
+        "desc": "Próxima seção"
+      },
+      {
+        "key": "Shift+F6",
+        "desc": "Seção anterior"
+      },
+      {
+        "key": "Tab",
+        "desc": "Próximo elemento"
+      },
+      {
+        "key": "Shift+Tab",
+        "desc": "Elemento anterior"
+      },
+      {
+        "key": "Ctrl+Shift+M",
+        "desc": "Menções e reações"
+      },
+      {
+        "key": "Ctrl+Shift+S",
+        "desc": "Itens salvos"
+      },
+      {
+        "key": "Ctrl+Shift+I",
+        "desc": "Info do canal"
+      },
+      {
+        "key": "Ctrl+[",
+        "desc": "Voltar"
+      },
+      {
+        "key": "Ctrl+]",
+        "desc": "Avançar"
+      },
+      {
+        "key": "Ctrl+/",
+        "desc": "Atalhos de teclado"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Enviar mensagem"
+      },
+      {
+        "key": "Shift+Enter",
+        "desc": "Nova linha"
+      },
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova mensagem"
+      },
+      {
+        "key": "Up Arrow",
+        "desc": "Editar última mensagem"
+      },
+      {
+        "key": "M",
+        "desc": "Lembrar depois"
+      },
+      {
+        "key": "U",
+        "desc": "Marcar como não lido"
+      },
+      {
+        "key": "P",
+        "desc": "Fixar mensagem"
+      },
+      {
+        "key": "A",
+        "desc": "Salvar mensagem"
+      },
+      {
+        "key": "E",
+        "desc": "Reação emoji"
+      },
+      {
+        "key": ":",
+        "desc": "Autocompletar emoji"
+      },
+      {
+        "key": "@",
+        "desc": "Autocompletar menção"
+      },
+      {
+        "key": "#",
+        "desc": "Autocompletar canal"
+      },
+      {
+        "key": "Ctrl+Shift+U",
+        "desc": "Upload de arquivo"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Negrito"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Itálico"
+      },
+      {
+        "key": "Ctrl+Shift+X",
+        "desc": "Tachado"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Código inline"
+      },
+      {
+        "key": "Ctrl+Shift+8",
+        "desc": "Lista com marcadores"
+      },
+      {
+        "key": "Ctrl+Shift+7",
+        "desc": "Lista numerada"
+      },
+      {
+        "key": "M",
+        "desc": "Mudo (chamada)"
+      },
+      {
+        "key": "V",
+        "desc": "Câmera (chamada)"
+      },
+      {
+        "key": "Ctrl+Shift+H",
+        "desc": "Iniciar huddle"
+      },
+      {
+        "key": "Ctrl+Shift+Y",
+        "desc": "Status ausente"
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Não perturbe"
+      }
+    ]
+  },
+  "discord.exe": {
+    "name": "Discord",
+    "shortcuts": [
+      {
+        "key": "Ctrl+K",
+        "desc": "Quick Switcher"
+      },
+      {
+        "key": "Ctrl+Alt+Up",
+        "desc": "Servidor anterior"
+      },
+      {
+        "key": "Ctrl+Alt+Down",
+        "desc": "Próximo servidor"
+      },
+      {
+        "key": "Alt+Up",
+        "desc": "Canal anterior"
+      },
+      {
+        "key": "Alt+Down",
+        "desc": "Próximo canal"
+      },
+      {
+        "key": "Alt+Shift+Up",
+        "desc": "Canal não lido anterior"
+      },
+      {
+        "key": "Escape",
+        "desc": "Marcar canal como lido"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar mensagens"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Abrir inbox"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Mensagens fixadas"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Lista de membros"
+      },
+      {
+        "key": "Up Arrow",
+        "desc": "Editar última mensagem"
+      },
+      {
+        "key": "Backspace",
+        "desc": "Excluir mensagem"
+      },
+      {
+        "key": "R",
+        "desc": "Responder"
+      },
+      {
+        "key": "E",
+        "desc": "Adicionar reação"
+      },
+      {
+        "key": "P",
+        "desc": "Fixar mensagem"
+      },
+      {
+        "key": "A",
+        "desc": "Salvar mensagem"
+      },
+      {
+        "key": "Ctrl+Shift+U",
+        "desc": "Upload de arquivo"
+      },
+      {
+        "key": "Tab",
+        "desc": "Focar área de texto"
+      },
+      {
+        "key": "Shift+Enter",
+        "desc": "Nova linha"
+      },
+      {
+        "key": "Ctrl+Shift+M",
+        "desc": "Toggle mute"
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Toggle deafen"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Atender chamada"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Negrito"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Itálico"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Sublinhado"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Emoji picker"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Seletor de GIF"
+      },
+      {
+        "key": "Ctrl+Shift+X",
+        "desc": "Tachado"
+      },
+      {
+        "key": "Ctrl+/",
+        "desc": "Ver atalhos"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Recarregar Discord"
+      }
+    ]
+  },
+  "spotify.exe": {
+    "name": "Spotify",
+    "shortcuts": [
+      {
+        "key": "Space",
+        "desc": "Play/Pause"
+      },
+      {
+        "key": "Ctrl+Right",
+        "desc": "Próxima faixa"
+      },
+      {
+        "key": "Ctrl+Left",
+        "desc": "Faixa anterior"
+      },
+      {
+        "key": "Ctrl+Up",
+        "desc": "Aumentar volume"
+      },
+      {
+        "key": "Ctrl+Down",
+        "desc": "Diminuir volume"
+      },
+      {
+        "key": "Ctrl+Shift+Down",
+        "desc": "Mudo"
+      },
+      {
+        "key": "Ctrl+Shift+Up",
+        "desc": "Volume máximo"
+      },
+      {
+        "key": "Shift+Right",
+        "desc": "Avançar 15s"
+      },
+      {
+        "key": "Shift+Left",
+        "desc": "Voltar 15s"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Aleatório (Shuffle)"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Repetir (Repeat)"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Focar barra de busca"
+      },
+      {
+        "key": "Ctrl+K",
+        "desc": "Abrir busca"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Histórico"
+      },
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova playlist"
+      },
+      {
+        "key": "Esc",
+        "desc": "Voltar"
+      },
+      {
+        "key": "S",
+        "desc": "Curtir/descurtir"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Voltar"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Buscar"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Configurações"
+      },
+      {
+        "key": "F1",
+        "desc": "Atalhos de teclado"
+      },
+      {
+        "key": "Alt+Left",
+        "desc": "Voltar"
+      },
+      {
+        "key": "Alt+Right",
+        "desc": "Avançar"
+      }
+    ]
+  },
+  "excel.exe": {
+    "name": "Microsoft Excel",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova pasta de trabalho"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir pasta de trabalho"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "F12",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar pasta de trabalho"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "F4",
+        "desc": "Repetir última ação"
+      },
+      {
+        "key": "Ctrl+F1",
+        "desc": "Expandir/ocultar faixa"
+      },
+      {
+        "key": "Arrow Keys",
+        "desc": "Mover uma célula"
+      },
+      {
+        "key": "Ctrl+Arrow",
+        "desc": "Ir para borda dos dados"
+      },
+      {
+        "key": "Tab",
+        "desc": "Próxima célula"
+      },
+      {
+        "key": "Shift+Tab",
+        "desc": "Célula anterior"
+      },
+      {
+        "key": "Enter",
+        "desc": "Confirmar e baixo"
+      },
+      {
+        "key": "Shift+Enter",
+        "desc": "Confirmar e cima"
+      },
+      {
+        "key": "Home",
+        "desc": "Início da linha"
+      },
+      {
+        "key": "Ctrl+Home",
+        "desc": "Célula A1"
+      },
+      {
+        "key": "Ctrl+End",
+        "desc": "Última célula com dados"
+      },
+      {
+        "key": "Ctrl+Page Down",
+        "desc": "Próxima planilha"
+      },
+      {
+        "key": "Ctrl+Page Up",
+        "desc": "Planilha anterior"
+      },
+      {
+        "key": "Shift+Arrow",
+        "desc": "Estender seleção"
+      },
+      {
+        "key": "Ctrl+Shift+Arrow",
+        "desc": "Selecionar até borda"
+      },
+      {
+        "key": "Ctrl+Spacebar",
+        "desc": "Selecionar coluna inteira"
+      },
+      {
+        "key": "Shift+Spacebar",
+        "desc": "Selecionar linha inteira"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar tudo"
+      },
+      {
+        "key": "F2",
+        "desc": "Editar célula"
+      },
+      {
+        "key": "Ctrl+Enter",
+        "desc": "Preencher células selecionadas"
+      },
+      {
+        "key": "Alt+Enter",
+        "desc": "Nova linha na célula"
+      },
+      {
+        "key": "Delete",
+        "desc": "Limpar célula"
+      },
+      {
+        "key": "Ctrl+;",
+        "desc": "Inserir data atual"
+      },
+      {
+        "key": "Ctrl+Shift+;",
+        "desc": "Inserir hora atual"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Preencher para baixo"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Preencher para direita"
+      },
+      {
+        "key": "Ctrl+'",
+        "desc": "Copiar valor da célula acima"
+      },
+      {
+        "key": "Ctrl+`",
+        "desc": "Alternar fórmulas/valores"
+      },
+      {
+        "key": "F4",
+        "desc": "Referência absoluta ($)"
+      },
+      {
+        "key": "Shift+F3",
+        "desc": "Inserir função"
+      },
+      {
+        "key": "Alt+=",
+        "desc": "Soma automática"
+      },
+      {
+        "key": "Ctrl+1",
+        "desc": "Formatar células"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Negrito"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Itálico"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Sublinhado"
+      },
+      {
+        "key": "Ctrl+5",
+        "desc": "Tachado"
+      },
+      {
+        "key": "Ctrl+Shift+~",
+        "desc": "Formato geral"
+      },
+      {
+        "key": "Ctrl+Shift+$",
+        "desc": "Formato moeda"
+      },
+      {
+        "key": "Ctrl+Shift+%",
+        "desc": "Formato percentual"
+      },
+      {
+        "key": "Ctrl+Shift+#",
+        "desc": "Formato data"
+      },
+      {
+        "key": "Ctrl+Shift+@",
+        "desc": "Formato hora"
+      },
+      {
+        "key": "Ctrl+Shift+!",
+        "desc": "Formato número"
+      },
+      {
+        "key": "Ctrl+Shift+&",
+        "desc": "Borda externa"
+      },
+      {
+        "key": "Ctrl+Shift+_",
+        "desc": "Remover bordas"
+      },
+      {
+        "key": "Alt+F1",
+        "desc": "Inserir gráfico na planilha"
+      },
+      {
+        "key": "F11",
+        "desc": "Inserir gráfico em nova planilha"
+      },
+      {
+        "key": "Ctrl+Shift+L",
+        "desc": "Ligar/desligar filtro"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Criar tabela"
+      },
+      {
+        "key": "Alt+Down",
+        "desc": "Abrir dropdown de filtro"
+      },
+      {
+        "key": "Shift+F11",
+        "desc": "Nova planilha"
+      },
+      {
+        "key": "Alt+F8",
+        "desc": "Macros"
+      },
+      {
+        "key": "Alt+F11",
+        "desc": "Editor VBA"
+      }
+    ]
+  },
+  "winword.exe": {
+    "name": "Microsoft Word",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Novo documento"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir documento"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "F12",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar documento"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "Ctrl+X",
+        "desc": "Recortar"
+      },
+      {
+        "key": "Ctrl+C",
+        "desc": "Copiar"
+      },
+      {
+        "key": "Ctrl+V",
+        "desc": "Colar"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar só formatação"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar tudo"
+      },
+      {
+        "key": "F7",
+        "desc": "Verificação ortográfica"
+      },
+      {
+        "key": "Shift+F5",
+        "desc": "Última posição do cursor"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Negrito"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Itálico"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Sublinhado"
+      },
+      {
+        "key": "Ctrl+Shift+W",
+        "desc": "Sublinhar apenas palavras"
+      },
+      {
+        "key": "Ctrl+Shift+D",
+        "desc": "Sublinhado duplo"
+      },
+      {
+        "key": "Ctrl+Shift+K",
+        "desc": "Versalete"
+      },
+      {
+        "key": "Ctrl+Shift+F",
+        "desc": "Mudar fonte"
+      },
+      {
+        "key": "Ctrl+Shift+P",
+        "desc": "Mudar tamanho"
+      },
+      {
+        "key": "Ctrl+]",
+        "desc": "Aumentar fonte 1pt"
+      },
+      {
+        "key": "Ctrl+[",
+        "desc": "Diminuir fonte 1pt"
+      },
+      {
+        "key": "Ctrl+Spacebar",
+        "desc": "Remover formatação"
+      },
+      {
+        "key": "Ctrl+Shift+>",
+        "desc": "Aumentar tamanho fonte"
+      },
+      {
+        "key": "Ctrl+Shift+<",
+        "desc": "Diminuir tamanho fonte"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Caixa de diálogo fonte"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Centralizar"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Alinhar à esquerda"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Alinhar à direita"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Justificar"
+      },
+      {
+        "key": "Ctrl+M",
+        "desc": "Aumentar recuo"
+      },
+      {
+        "key": "Ctrl+Shift+M",
+        "desc": "Diminuir recuo"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Recuo pendente"
+      },
+      {
+        "key": "Ctrl+Q",
+        "desc": "Remover formatação parágrafo"
+      },
+      {
+        "key": "Ctrl+1",
+        "desc": "Espaçamento simples"
+      },
+      {
+        "key": "Ctrl+2",
+        "desc": "Espaçamento duplo"
+      },
+      {
+        "key": "Ctrl+5",
+        "desc": "Espaçamento 1.5"
+      },
+      {
+        "key": "Ctrl+0",
+        "desc": "Espaçamento antes do parágrafo"
+      },
+      {
+        "key": "Ctrl+Shift+L",
+        "desc": "Lista com marcadores"
+      },
+      {
+        "key": "Ctrl+Home",
+        "desc": "Início do documento"
+      },
+      {
+        "key": "Ctrl+End",
+        "desc": "Fim do documento"
+      },
+      {
+        "key": "Ctrl+Left",
+        "desc": "Palavra anterior"
+      },
+      {
+        "key": "Ctrl+Right",
+        "desc": "Próxima palavra"
+      },
+      {
+        "key": "Ctrl+Up",
+        "desc": "Parágrafo anterior"
+      },
+      {
+        "key": "Ctrl+Down",
+        "desc": "Próximo parágrafo"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Ir para página"
+      },
+      {
+        "key": "Ctrl+F",
+        "desc": "Localizar"
+      },
+      {
+        "key": "Ctrl+H",
+        "desc": "Localizar e substituir"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Estilo Normal"
+      },
+      {
+        "key": "Ctrl+Alt+1",
+        "desc": "Título 1"
+      },
+      {
+        "key": "Ctrl+Alt+2",
+        "desc": "Título 2"
+      },
+      {
+        "key": "Ctrl+Alt+3",
+        "desc": "Título 3"
+      },
+      {
+        "key": "Alt+Ctrl+F",
+        "desc": "Inserir nota de rodapé"
+      },
+      {
+        "key": "Alt+Ctrl+D",
+        "desc": "Inserir nota de fim"
+      },
+      {
+        "key": "Ctrl+Shift+Enter",
+        "desc": "Quebra de página"
+      },
+      {
+        "key": "Ctrl+Shift+*",
+        "desc": "Mostrar caracteres ocultos"
+      },
+      {
+        "key": "Ctrl+F2",
+        "desc": "Visualizar impressão"
+      },
+      {
+        "key": "Alt+F8",
+        "desc": "Macros"
+      },
+      {
+        "key": "Alt+F11",
+        "desc": "Editor VBA"
+      }
+    ]
+  },
+  "powerpnt.exe": {
+    "name": "Microsoft PowerPoint",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Nova apresentação"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir apresentação"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "F12",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+W",
+        "desc": "Fechar apresentação"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Imprimir"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Refazer"
+      },
+      {
+        "key": "F4",
+        "desc": "Repetir última ação"
+      },
+      {
+        "key": "Ctrl+M",
+        "desc": "Novo slide"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Duplicar slide/objeto"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Selecionar todos os slides"
+      },
+      {
+        "key": "Delete",
+        "desc": "Excluir slide"
+      },
+      {
+        "key": "Ctrl+Up",
+        "desc": "Mover slide para cima"
+      },
+      {
+        "key": "Ctrl+Down",
+        "desc": "Mover slide para baixo"
+      },
+      {
+        "key": "F5",
+        "desc": "Iniciar apresentação do início"
+      },
+      {
+        "key": "Shift+F5",
+        "desc": "Iniciar do slide atual"
+      },
+      {
+        "key": "Esc",
+        "desc": "Sair da apresentação"
+      },
+      {
+        "key": "N",
+        "desc": "Próximo slide"
+      },
+      {
+        "key": "P",
+        "desc": "Slide anterior"
+      },
+      {
+        "key": "Enter",
+        "desc": "Próximo slide/animação"
+      },
+      {
+        "key": "Space",
+        "desc": "Próximo slide/animação"
+      },
+      {
+        "key": "B",
+        "desc": "Tela preta"
+      },
+      {
+        "key": "W",
+        "desc": "Tela branca"
+      },
+      {
+        "key": "E",
+        "desc": "Apagar anotações"
+      },
+      {
+        "key": "S",
+        "desc": "Pausar/reiniciar"
+      },
+      {
+        "key": "H",
+        "desc": "Ocultar cursor"
+      },
+      {
+        "key": "Ctrl+P",
+        "desc": "Mostrar caneta"
+      },
+      {
+        "key": "Ctrl+A",
+        "desc": "Mostrar seta"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Apagar caneta"
+      },
+      {
+        "key": "Ctrl+B",
+        "desc": "Negrito"
+      },
+      {
+        "key": "Ctrl+I",
+        "desc": "Itálico"
+      },
+      {
+        "key": "Ctrl+U",
+        "desc": "Sublinhado"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Caixa de diálogo fonte"
+      },
+      {
+        "key": "Ctrl+Shift+C",
+        "desc": "Copiar formatação"
+      },
+      {
+        "key": "Ctrl+Shift+V",
+        "desc": "Colar formatação"
+      },
+      {
+        "key": "Ctrl+Alt+V",
+        "desc": "Colar especial"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Centralizar"
+      },
+      {
+        "key": "Ctrl+L",
+        "desc": "Alinhar à esquerda"
+      },
+      {
+        "key": "Ctrl+R",
+        "desc": "Alinhar à direita"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Justificar"
+      },
+      {
+        "key": "Ctrl+Spacebar",
+        "desc": "Remover formatação"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Agrupar objetos"
+      },
+      {
+        "key": "Ctrl+Shift+G",
+        "desc": "Desagrupar"
+      },
+      {
+        "key": "Ctrl+K",
+        "desc": "Inserir hyperlink"
+      },
+      {
+        "key": "Ctrl+Alt+M",
+        "desc": "Inserir comentário"
+      },
+      {
+        "key": "Ctrl+Shift+]",
+        "desc": "Trazer para frente"
+      },
+      {
+        "key": "Ctrl+Shift+[",
+        "desc": "Enviar para trás"
+      },
+      {
+        "key": "Alt+Right",
+        "desc": "Rotacionar 15° horário"
+      },
+      {
+        "key": "Alt+Left",
+        "desc": "Rotacionar 15° anti-horário"
+      },
+      {
+        "key": "Tab",
+        "desc": "Próxima célula (tabela)"
+      },
+      {
+        "key": "Shift+Tab",
+        "desc": "Célula anterior (tabela)"
+      },
+      {
+        "key": "Ctrl+F1",
+        "desc": "Expandir/ocultar faixa"
+      },
+      {
+        "key": "F7",
+        "desc": "Verificação ortográfica"
+      },
+      {
+        "key": "Ctrl+Shift+*",
+        "desc": "Mostrar marcadores"
+      }
+    ]
+  },
+  "photoshop.exe": {
+    "name": "Adobe Photoshop",
+    "shortcuts": [
+      {
+        "key": "Ctrl+N",
+        "desc": "Novo documento"
+      },
+      {
+        "key": "Ctrl+O",
+        "desc": "Abrir arquivo"
+      },
+      {
+        "key": "Ctrl+S",
+        "desc": "Salvar"
+      },
+      {
+        "key": "Ctrl+Shift+S",
+        "desc": "Salvar como"
+      },
+      {
+        "key": "Ctrl+Z",
+        "desc": "Desfazer"
+      },
+      {
+        "key": "Ctrl+Alt+Z",
+        "desc": "Desfazer (passo)"
+      },
+      {
+        "key": "Ctrl+Y",
+        "desc": "Visualizar/Mostrar"
+      },
+      {
+        "key": "V",
+        "desc": "Ferramenta Mover"
+      },
+      {
+        "key": "M",
+        "desc": "Ferramenta Retângulo Marquee"
+      },
+      {
+        "key": "L",
+        "desc": "Ferramenta Laço"
+      },
+      {
+        "key": "W",
+        "desc": "Ferramenta Varinha Mágica"
+      },
+      {
+        "key": "C",
+        "desc": "Ferramenta Recorte"
+      },
+      {
+        "key": "I",
+        "desc": "Ferramenta Conta-Gotas"
+      },
+      {
+        "key": "J",
+        "desc": "Ferramenta Pincel de Correção"
+      },
+      {
+        "key": "B",
+        "desc": "Ferramenta Pincel"
+      },
+      {
+        "key": "S",
+        "desc": "Ferramenta Carimbo"
+      },
+      {
+        "key": "E",
+        "desc": "Ferramenta Borracha"
+      },
+      {
+        "key": "G",
+        "desc": "Ferramenta Balde de Tinta"
+      },
+      {
+        "key": "T",
+        "desc": "Ferramenta Texto"
+      },
+      {
+        "key": "P",
+        "desc": "Ferramenta Caneta"
+      },
+      {
+        "key": "U",
+        "desc": "Ferramenta Forma"
+      },
+      {
+        "key": "H",
+        "desc": "Ferramenta Mão"
+      },
+      {
+        "key": "Z",
+        "desc": "Ferramenta Zoom"
+      },
+      {
+        "key": "D",
+        "desc": "Cores padrão (preto/branco)"
+      },
+      {
+        "key": "X",
+        "desc": "Trocar cores frente/fundo"
+      },
+      {
+        "key": "Ctrl+T",
+        "desc": "Transformação livre"
+      },
+      {
+        "key": "Ctrl+J",
+        "desc": "Duplicar camada"
+      },
+      {
+        "key": "Ctrl+Shift+N",
+        "desc": "Nova camada"
+      },
+      {
+        "key": "Ctrl+G",
+        "desc": "Agrupar camadas"
+      },
+      {
+        "key": "Ctrl+E",
+        "desc": "Mesclar camadas"
+      },
+      {
+        "key": "Ctrl+Shift+E",
+        "desc": "Mesclar todas visíveis"
+      },
+      {
+        "key": "[ ]",
+        "desc": "Tamanho do pincel"
+      },
+      {
+        "key": "Ctrl+[ ]",
+        "desc": "Mover camada para baixo/cima"
+      },
+      {
+        "key": "Ctrl+Shift+[ ]",
+        "desc": "Mover camada para topo/fundo"
+      },
+      {
+        "key": "Ctrl+D",
+        "desc": "Desfazer seleção"
+      },
+      {
+        "key": "Ctrl+Shift+I",
+        "desc": "Inverter seleção"
+      },
+      {
+        "key": "Q",
+        "desc": "Modo de máscara rápida"
+      },
+      {
+        "key": "F",
+        "desc": "Alternar modo de tela"
+      },
+      {
+        "key": "Ctrl+0",
+        "desc": "Ajustar na tela"
+      },
+      {
+        "key": "Ctrl+1",
+        "desc": "Zoom 100%"
+      },
+      {
+        "key": "Ctrl+Shift+Alt+N",
+        "desc": "Nova camada (sem diálogo)"
+      }
+    ]
+  }
+}
